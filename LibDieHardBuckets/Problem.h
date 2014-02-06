@@ -30,6 +30,8 @@ namespace Diehard
         void BuildGraph();
         void Resolve(Volume goal_sum);
         
+        std::string GetName() const;
+        
     private:
         void CreateNodes();
         void Link();

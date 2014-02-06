@@ -180,4 +180,20 @@ namespace Diehard
         }
         return nullptr;
     }
+    
+#pragma mark Return problem infomation
+    
+    string Problem::GetName() const
+    {
+        stringstream ss;
+        ss << "(";
+        for (size_t i = 0; i < capacities.size(); i++)
+        {
+            if (i != 0) ss << ",";
+            ss << capacities[i];
+        }
+        ss << ")";
+        return ss.str();
+    }
+    
 }

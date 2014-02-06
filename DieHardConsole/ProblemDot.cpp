@@ -31,13 +31,7 @@ namespace Diehard
         
         os << "digraph G {" << endl;
         
-        os << "graph[label=\"Capacity = (";
-        for (size_t i = 0; i < capacities.size(); i++)
-        {
-            if (i != 0) os << ",";
-            os << capacities[i];
-        }
-        os << ") Goal = " << goal_sum << "\"];" << endl;
+        os << "graph[label=\"Capacity = " << GetName() << " Goal = " << goal_sum << "\"];" << endl;
         
         os << "subgraph cluster0 {" << endl;
         os << "label = \"Start\";" << endl;

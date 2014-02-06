@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DieHardBucketsTweet/DieHardBucketsTweet.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DieHardConsole/DieHardBucketsConsole.xcodeproj">
    </FileRef>
    <FileRef
