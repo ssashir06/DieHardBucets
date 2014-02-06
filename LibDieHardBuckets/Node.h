@@ -26,7 +26,7 @@ namespace Diehard
         
     public:
         std::vector<Volume> volumes;
-        std::list<Node*> connection;
+        std::list<Node*> from, to;
         Cost cost;
         bool is_used;
         

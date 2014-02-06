@@ -83,13 +83,21 @@ namespace Diehard
     {
         for (auto& node : nodes)
         {
+            node.from.clear();
+            node.to.clear();
+        }
+        
+        for (auto& node : nodes)
+        {
             auto actions = node.GetActions(capacities);
-            node.connection.clear();
             for (auto& action : actions)
             {
                 auto node_action = GetNode(action);
                 if (node_action != nullptr)
-                    node.connection.push_back(node_action);
+                {
+                    node_action->from.push_back(&node);
+                    node.to.push_back(node_action);
+                }
             }
         }
     }
@@ -113,7 +121,7 @@ namespace Diehard
             cost++;
             for (auto node_ptr : *nodes_route)
             {
-                for (auto node_next_ptr : node_ptr->connection)
+                for (auto node_next_ptr : node_ptr->to)
                 {
                     if (node_next_ptr->cost > cost)
                     {
@@ -149,23 +157,12 @@ namespace Diehard
             auto nodes_to_next = shared_ptr<list<Node*> >(new list<Node*>());
             for (auto node_to_ptr : *nodes_to)
             {
-                for (auto& node_from : nodes)
+                for (auto node_from_ptr : node_to_ptr->from)
                 {
-                    if (node_from.cost != node_to_ptr->cost - 1) continue;
+                    if (node_to_ptr->cost <= node_from_ptr->cost) continue;
                     
-                    bool is_connected = false;
-                    for (auto node_to_ptr_2 : node_from.connection)
-                    {
-                        if (node_to_ptr_2 != node_to_ptr) continue;
-                        is_connected = true;
-                        break;
-                    }
-                    
-                    if (is_connected)
-                    {
-                        nodes_to_next->push_back(&node_from);
-                        node_from.is_used = true;
-                    }
+                    node_from_ptr->is_used = true;
+                    nodes_to_next->push_back(node_from_ptr);
                 }
             }
             

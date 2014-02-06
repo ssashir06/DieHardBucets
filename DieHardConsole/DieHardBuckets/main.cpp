@@ -12,7 +12,9 @@
 #include <vector>
 #include <cstdlib>
 #include <string>
+#ifdef DEBUG
 #include <boost/filesystem/operations.hpp>
+#endif
 #include "ProblemDot.h"
 
 using namespace std;
@@ -57,7 +59,9 @@ int main(int argc, const char * argv[])
     Volume backet_max = 0;
     for_each(backets.begin(), backets.end(), [&](Volume v) { backet_max += v; });
     
+#ifdef DEBUG
     cout << "current directory: " << boost::filesystem::current_path() << endl;
+#endif
     
     for (Volume goal = 1; goal < backet_max; goal++)
     {

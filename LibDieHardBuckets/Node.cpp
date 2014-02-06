@@ -23,11 +23,11 @@ namespace Diehard
     {}
     
     Node::Node(const Node& node_src)
-    : volumes(node_src.volumes), connection(node_src.connection), cost(cost_max), is_used(true)
+    : volumes(node_src.volumes), from(node_src.from), to(node_src.to), cost(cost_max), is_used(true)
     {}
     
     Node::Node(const Node& node_src, Dimention dim, Volume v)
-    : volumes(node_src.volumes), connection(node_src.connection), cost(cost_max), is_used(true)
+    : volumes(node_src.volumes), from(node_src.from), to(node_src.to), cost(cost_max), is_used(true)
     {
         volumes[dim] = v;
     }

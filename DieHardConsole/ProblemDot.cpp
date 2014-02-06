@@ -60,7 +60,7 @@ namespace Diehard
         for (auto& node_from : nodes)
         {
             
-            for (auto node_to_ptr : node_from.connection)
+            for (auto node_to_ptr : node_from.to)
             {
                 if (
                     node_from.cost < node_to_ptr->cost &&
