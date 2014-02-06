@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		6876DCDD18A37E9600FB7BE7 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682A987718A352E700AD9638 /* Node.cpp */; };
 		6876DCDE18A37E9600FB7BE7 /* Problem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682A987818A352E700AD9638 /* Problem.cpp */; };
-		6876DCEE18A3855500FB7BE7 /* Dimention.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCEA18A3855500FB7BE7 /* Dimention.h */; };
-		6876DCEF18A3855500FB7BE7 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCEB18A3855500FB7BE7 /* Node.h */; };
-		6876DCF018A3855500FB7BE7 /* Problem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCEC18A3855500FB7BE7 /* Problem.h */; };
-		6876DCF118A3855500FB7BE7 /* Volume.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCED18A3855500FB7BE7 /* Volume.h */; };
+		6876DCEE18A3855500FB7BE7 /* Dimention.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCEA18A3855500FB7BE7 /* Dimention.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6876DCEF18A3855500FB7BE7 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCEB18A3855500FB7BE7 /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6876DCF018A3855500FB7BE7 /* Problem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCEC18A3855500FB7BE7 /* Problem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6876DCF118A3855500FB7BE7 /* Volume.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCED18A3855500FB7BE7 /* Volume.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
