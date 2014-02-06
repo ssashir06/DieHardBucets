@@ -34,6 +34,7 @@ int main(int argc, const char * argv[])
     vector<Volume> backets = vector<Volume>(argc - 1);;
     try
     {
+        size_t backet_size = 0;
         for (int i = 1; i < argc; i++)
         {
             if (strcmp(argv[i], "--prefix") == 0)
@@ -43,9 +44,10 @@ int main(int argc, const char * argv[])
             }
             else
             {
-                backets[i - 1] = stoi(argv[i]);
+                backets[backet_size++] = stoi(argv[i]);
             }
         }
+        backets.resize(backet_size);
     }
     catch (const invalid_argument& ex)
     {
