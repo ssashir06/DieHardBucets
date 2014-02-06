@@ -7,6 +7,7 @@
 //
 
 #include <sstream>
+#include <iostream>
 #include "ProblemDot.h"
 
 using namespace std;
@@ -14,12 +15,12 @@ using namespace std;
 namespace Diehard
 {
     ProblemDot::ProblemDot(Volume (&capacities)[], Dimention size)
-    :Problem(capacities, size){}
+    :Problem(capacities, size) {}
     
     ProblemDot::ProblemDot(const std::vector<Volume>& capacities)
-    :Problem(capacities){}
+    :Problem(capacities) {}
     
-    void ProblemDot::PrintGraph() const
+    void ProblemDot::PrintGraph(ostream& os) const
     {
         auto name = [](const Node& node)
         {
@@ -28,33 +29,33 @@ namespace Diehard
             return ss.str();
         };
         
-        cout << "digraph G {" << endl;
+        os << "digraph G {" << endl;
         
-        cout << "graph[label=\"Capacity = (";
+        os << "graph[label=\"Capacity = (";
         for (size_t i = 0; i < capacities.size(); i++)
         {
-            if (i != 0) cout << ",";
-            cout << capacities[i];
+            if (i != 0) os << ",";
+            os << capacities[i];
         }
-        cout << ") Goal = " << goal_sum << "\"];" << endl;
+        os << ") Goal = " << goal_sum << "\"];" << endl;
         
-        cout << "subgraph cluster0 {" << endl;
-        cout << "label = \"Start\";" << endl;
+        os << "subgraph cluster0 {" << endl;
+        os << "label = \"Start\";" << endl;
         for (auto& node : nodes)
         {
             if (node.GetSum() == 0)
-                cout << name(node) << ";" << endl;
+                os << name(node) << ";" << endl;
         }
-        cout << "}" << endl;
+        os << "}" << endl;
         
-        cout << "subgraph cluster1 {" << endl;
-        cout << "label = \"Goal\";" << endl;
+        os << "subgraph cluster1 {" << endl;
+        os << "label = \"Goal\";" << endl;
         for (auto& node : nodes)
         {
             if (node.GetSum() == goal_sum)
-                cout << name(node) << ";" << endl;
+                os << name(node) << ";" << endl;
         }
-        cout << "}" << endl;
+        os << "}" << endl;
         
         for (auto& node_from : nodes)
         {
@@ -65,12 +66,12 @@ namespace Diehard
                     node_from.cost < node_to_ptr->cost &&
                     node_from.is_used && node_to_ptr->is_used)
                     
-                    cout <<
+                    os <<
                         name(node_from) << " -> " <<
                         name(*node_to_ptr) << ";" << endl;
             }
         }
         
-        cout << "}" << endl;
+        os << "}" << endl;
     }
 }

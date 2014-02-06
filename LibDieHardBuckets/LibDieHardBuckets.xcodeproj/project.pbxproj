@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		682A987918A352E700AD9638 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682A987718A352E700AD9638 /* Node.cpp */; };
-		682A987A18A352E700AD9638 /* Problem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682A987818A352E700AD9638 /* Problem.cpp */; };
-		68EDD72B18A34E8B006B0E17 /* Dimention.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EDD72518A34E8B006B0E17 /* Dimention.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68EDD72D18A34E8B006B0E17 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EDD72718A34E8B006B0E17 /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68EDD72F18A34E8B006B0E17 /* Problem.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EDD72918A34E8B006B0E17 /* Problem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68EDD73018A34E8B006B0E17 /* Volume.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EDD72A18A34E8B006B0E17 /* Volume.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6876DCDD18A37E9600FB7BE7 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682A987718A352E700AD9638 /* Node.cpp */; };
+		6876DCDE18A37E9600FB7BE7 /* Problem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682A987818A352E700AD9638 /* Problem.cpp */; };
+		6876DCEE18A3855500FB7BE7 /* Dimention.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCEA18A3855500FB7BE7 /* Dimention.h */; };
+		6876DCEF18A3855500FB7BE7 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCEB18A3855500FB7BE7 /* Node.h */; };
+		6876DCF018A3855500FB7BE7 /* Problem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCEC18A3855500FB7BE7 /* Problem.h */; };
+		6876DCF118A3855500FB7BE7 /* Volume.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCED18A3855500FB7BE7 /* Volume.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		682A987718A352E700AD9638 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
 		682A987818A352E700AD9638 /* Problem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Problem.cpp; sourceTree = "<group>"; };
-		6885992518A3448A003A64E2 /* libLibDieHardBuckets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibDieHardBuckets.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		68EDD72518A34E8B006B0E17 /* Dimention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dimention.h; sourceTree = "<group>"; };
-		68EDD72718A34E8B006B0E17 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
-		68EDD72918A34E8B006B0E17 /* Problem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem.h; sourceTree = "<group>"; };
-		68EDD72A18A34E8B006B0E17 /* Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
+		6876DCEA18A3855500FB7BE7 /* Dimention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dimention.h; sourceTree = "<group>"; };
+		6876DCEB18A3855500FB7BE7 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		6876DCEC18A3855500FB7BE7 /* Problem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem.h; sourceTree = "<group>"; };
+		6876DCED18A3855500FB7BE7 /* Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
+		689730CE18A37C12003877CD /* libDieHardBuckets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDieHardBuckets.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6885992218A3448A003A64E2 /* Frameworks */ = {
+		689730CB18A37C12003877CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,9 +39,12 @@
 		6889D91118A33EF20098DFEB = {
 			isa = PBXGroup;
 			children = (
+				6876DCEA18A3855500FB7BE7 /* Dimention.h */,
+				6876DCEB18A3855500FB7BE7 /* Node.h */,
+				6876DCEC18A3855500FB7BE7 /* Problem.h */,
+				6876DCED18A3855500FB7BE7 /* Volume.h */,
 				682A987718A352E700AD9638 /* Node.cpp */,
 				682A987818A352E700AD9638 /* Problem.cpp */,
-				68EDD72418A34E8B006B0E17 /* include */,
 				6889D91B18A33EF20098DFEB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,54 +52,43 @@
 		6889D91B18A33EF20098DFEB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6885992518A3448A003A64E2 /* libLibDieHardBuckets.a */,
+				689730CE18A37C12003877CD /* libDieHardBuckets.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		68EDD72418A34E8B006B0E17 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				68EDD72518A34E8B006B0E17 /* Dimention.h */,
-				68EDD72718A34E8B006B0E17 /* Node.h */,
-				68EDD72918A34E8B006B0E17 /* Problem.h */,
-				68EDD72A18A34E8B006B0E17 /* Volume.h */,
-			);
-			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6885992318A3448A003A64E2 /* Headers */ = {
+		689730CC18A37C12003877CD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68EDD72F18A34E8B006B0E17 /* Problem.h in Headers */,
-				68EDD72D18A34E8B006B0E17 /* Node.h in Headers */,
-				68EDD73018A34E8B006B0E17 /* Volume.h in Headers */,
-				68EDD72B18A34E8B006B0E17 /* Dimention.h in Headers */,
+				6876DCF018A3855500FB7BE7 /* Problem.h in Headers */,
+				6876DCEF18A3855500FB7BE7 /* Node.h in Headers */,
+				6876DCF118A3855500FB7BE7 /* Volume.h in Headers */,
+				6876DCEE18A3855500FB7BE7 /* Dimention.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6885992418A3448A003A64E2 /* LibDieHardBuckets */ = {
+		689730CD18A37C12003877CD /* DieHardBuckets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6885992618A3448A003A64E2 /* Build configuration list for PBXNativeTarget "LibDieHardBuckets" */;
+			buildConfigurationList = 689730CF18A37C12003877CD /* Build configuration list for PBXNativeTarget "DieHardBuckets" */;
 			buildPhases = (
-				6885992118A3448A003A64E2 /* Sources */,
-				6885992218A3448A003A64E2 /* Frameworks */,
-				6885992318A3448A003A64E2 /* Headers */,
+				689730CA18A37C12003877CD /* Sources */,
+				689730CB18A37C12003877CD /* Frameworks */,
+				689730CC18A37C12003877CD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LibDieHardBuckets;
-			productName = LibDieHardBuckets;
-			productReference = 6885992518A3448A003A64E2 /* libLibDieHardBuckets.a */;
+			name = DieHardBuckets;
+			productName = DieHardBuckets;
+			productReference = 689730CE18A37C12003877CD /* libDieHardBuckets.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -120,46 +112,24 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6885992418A3448A003A64E2 /* LibDieHardBuckets */,
+				689730CD18A37C12003877CD /* DieHardBuckets */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6885992118A3448A003A64E2 /* Sources */ = {
+		689730CA18A37C12003877CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682A987918A352E700AD9638 /* Node.cpp in Sources */,
-				682A987A18A352E700AD9638 /* Problem.cpp in Sources */,
+				6876DCDD18A37E9600FB7BE7 /* Node.cpp in Sources */,
+				6876DCDE18A37E9600FB7BE7 /* Problem.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		6885992718A3448A003A64E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = include/DieHardBuckets;
-			};
-			name = Debug;
-		};
-		6885992818A3448A003A64E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = include/DieHardBuckets;
-			};
-			name = Release;
-		};
 		6889D91C18A33EF20098DFEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -228,23 +198,47 @@
 			};
 			name = Release;
 		};
+		689730D018A37C12003877CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/DieHardBuckets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/DieHardBuckets;
+			};
+			name = Debug;
+		};
+		689730D118A37C12003877CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/DieHardBuckets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/DieHardBuckets;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6885992618A3448A003A64E2 /* Build configuration list for PBXNativeTarget "LibDieHardBuckets" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6885992718A3448A003A64E2 /* Debug */,
-				6885992818A3448A003A64E2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6889D91518A33EF20098DFEB /* Build configuration list for PBXProject "LibDieHardBuckets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6889D91C18A33EF20098DFEB /* Debug */,
 				6889D91D18A33EF20098DFEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		689730CF18A37C12003877CD /* Build configuration list for PBXNativeTarget "DieHardBuckets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689730D018A37C12003877CD /* Debug */,
+				689730D118A37C12003877CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

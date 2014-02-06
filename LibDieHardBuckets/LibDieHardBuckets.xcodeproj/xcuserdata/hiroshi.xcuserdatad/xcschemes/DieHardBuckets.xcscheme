@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6885992418A3448A003A64E2"
-               BuildableName = "libLibDieHardBuckets.a"
-               BlueprintName = "LibDieHardBuckets"
+               BlueprintIdentifier = "689730CD18A37C12003877CD"
+               BuildableName = "libDieHardBuckets.a"
+               BlueprintName = "DieHardBuckets"
                ReferencedContainer = "container:LibDieHardBuckets.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

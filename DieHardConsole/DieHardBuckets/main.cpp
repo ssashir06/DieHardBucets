@@ -6,10 +6,13 @@
 //
 //
 
+#include <fstream>
 #include <iostream>
+#include <sstream>
 #include <vector>
 #include <cstdlib>
 #include <string>
+#include <boost/filesystem/operations.hpp>
 #include "ProblemDot.h"
 
 using namespace std;
@@ -17,34 +20,66 @@ using namespace Diehard;
 
 int main(int argc, const char * argv[])
 {
-    if (argc <= 2)
+    if (argc < 2)
     {
-        cerr << "bad argments" << endl;
+        cout << "usage: " << argv[0] << "CAPACITIES [--prefix FILENAME]" << endl << endl;
+        cout << "Specify bucket capacities by CAPACITIES argument, that is split by space character." << endl;
+        cout << "CAPACITIES must be integer." << endl;
         return EXIT_FAILURE;
     }
     
-    int goal;
-    vector<Volume> backets = vector<Volume>(argc - 2);;
+    string prefix = "DieHard";
+    vector<Volume> backets = vector<Volume>(argc - 1);;
     try
     {
-        goal = stoi(argv[1]);
-        for (int i = 0; i < argc - 2; i++)
+        for (int i = 1; i < argc; i++)
         {
-            backets[i] = stoi(argv[i + 2]);
+            if (strcmp(argv[i], "--prefix") == 0)
+            {
+                prefix = argv[i + 1];
+                i++;
+            }
+            else
+            {
+                backets[i - 1] = stoi(argv[i]);
+            }
         }
     }
     catch (const invalid_argument& ex)
     {
-        cerr << ex.what() <<  endl;
+        cerr << "Argument is wrong" << ex.what() <<  endl;
         return EXIT_FAILURE;
     }
     
     auto prob = ProblemDot(backets);
     prob.BuildGraph();
-    prob.Resolve(goal);
-    prob.PrintGraph();
-    prob.Resolve(2);
-    prob.PrintGraph();
+    
+    Volume backet_max = 0;
+    for_each(backets.begin(), backets.end(), [&](Volume v) { backet_max += v; });
+    
+    cout << "current directory: " << boost::filesystem::current_path() << endl;
+    
+    for (Volume goal = 1; goal < backet_max; goal++)
+    {
+        stringstream ss;
+        ss << prefix << ".";
+        for (size_t i = 0; i < backets.size(); i++)
+        {
+            ss << backets[i] << ".";
+        }
+        ss << "goal." << goal << ".dot";
+        
+        string filename = ss.str();
+        
+        ofstream ofs;
+        ofs.open(filename, ofstream::out | ofstream::trunc);
+        
+        cout << "Writing file: " << filename << endl;
+        prob.Resolve(goal);
+        prob.PrintGraph(ofs);
+        
+        ofs.close();
+    }
     
     return EXIT_SUCCESS;
 }

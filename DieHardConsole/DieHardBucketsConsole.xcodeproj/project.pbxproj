@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		682A987618A350E600AD9638 /* ProblemDot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682A987418A350E600AD9638 /* ProblemDot.cpp */; };
-		682E7A3A18A35D280065D918 /* libLibDieHardBuckets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682E7A3918A35D280065D918 /* libLibDieHardBuckets.a */; };
+		6876DCE018A37EA500FB7BE7 /* libDieHardBuckets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6876DCDF18A37EA500FB7BE7 /* libDieHardBuckets.a */; };
 		6885991618A340C7003A64E2 /* DieHardBuckets.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6885991518A340C7003A64E2 /* DieHardBuckets.1 */; };
 		6885991D18A340E6003A64E2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6885991C18A340E6003A64E2 /* main.cpp */; };
+		689730C818A375E0003877CD /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 689730C618A374D6003877CD /* libboost_system.a */; };
+		689730C918A375F4003877CD /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 689730C418A37475003877CD /* libboost_filesystem.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,10 +31,12 @@
 /* Begin PBXFileReference section */
 		682A987418A350E600AD9638 /* ProblemDot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProblemDot.cpp; path = ../ProblemDot.cpp; sourceTree = "<group>"; };
 		682A987518A350E600AD9638 /* ProblemDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProblemDot.h; path = ../ProblemDot.h; sourceTree = "<group>"; };
-		682E7A3918A35D280065D918 /* libLibDieHardBuckets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLibDieHardBuckets.a; path = "../../../../Library/Developer/Xcode/DerivedData/DieHard-demmjmumskuolnhjtkdwsngxszcv/Build/Products/Debug/libLibDieHardBuckets.a"; sourceTree = "<group>"; };
+		6876DCDF18A37EA500FB7BE7 /* libDieHardBuckets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDieHardBuckets.a; path = "../../../../Library/Developer/Xcode/DerivedData/DieHard-demmjmumskuolnhjtkdwsngxszcv/Build/Products/Debug/libDieHardBuckets.a"; sourceTree = "<group>"; };
 		6885991018A340C7003A64E2 /* DieHardBuckets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DieHardBuckets; sourceTree = BUILT_PRODUCTS_DIR; };
 		6885991518A340C7003A64E2 /* DieHardBuckets.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DieHardBuckets.1; sourceTree = "<group>"; };
 		6885991C18A340E6003A64E2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		689730C418A37475003877CD /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = ../../../../../../usr/local/Cellar/boost/1.55.0/lib/libboost_filesystem.a; sourceTree = "<group>"; };
+		689730C618A374D6003877CD /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = ../../../../../../usr/local/Cellar/boost/1.55.0/lib/libboost_system.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682E7A3A18A35D280065D918 /* libLibDieHardBuckets.a in Frameworks */,
+				6876DCE018A37EA500FB7BE7 /* libDieHardBuckets.a in Frameworks */,
+				689730C918A375F4003877CD /* libboost_filesystem.a in Frameworks */,
+				689730C818A375E0003877CD /* libboost_system.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +56,9 @@
 		6885990718A340C7003A64E2 = {
 			isa = PBXGroup;
 			children = (
-				682E7A3918A35D280065D918 /* libLibDieHardBuckets.a */,
+				6876DCDF18A37EA500FB7BE7 /* libDieHardBuckets.a */,
+				689730C618A374D6003877CD /* libboost_system.a */,
+				689730C418A37475003877CD /* libboost_filesystem.a */,
 				6885991218A340C7003A64E2 /* DieHardBuckets */,
 				6885991118A340C7003A64E2 /* Products */,
 			);
@@ -164,6 +172,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+					"$(LIBRARY_SEARCH_PATHS)/usr/local/include",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -195,6 +210,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+					"$(LIBRARY_SEARCH_PATHS)/usr/local/include",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};
@@ -205,7 +227,8 @@
 			buildSettings = {
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DieHard-demmjmumskuolnhjtkdwsngxszcv/Build/Products/Debug",
+					/usr/local/lib,
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DieHard-demmjmumskuolnhjtkdwsngxszcv/Build/Products/Debug/",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -216,7 +239,8 @@
 			buildSettings = {
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DieHard-demmjmumskuolnhjtkdwsngxszcv/Build/Products/Debug",
+					/usr/local/lib,
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DieHard-demmjmumskuolnhjtkdwsngxszcv/Build/Products/Debug/",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

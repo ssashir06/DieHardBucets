@@ -9,7 +9,7 @@
 #ifndef __DieHardBucketsConsole__ProblemDot__
 #define __DieHardBucketsConsole__ProblemDot__
 
-#include <iostream>
+#include <ostream>
 #include <DieHardBuckets/Problem.h>
 
 namespace Diehard
@@ -19,8 +19,9 @@ namespace Diehard
     public:
         ProblemDot(Volume (&capacities)[], Dimention size);
         ProblemDot(const std::vector<Volume>& capacities);
+        
     public:
-        void PrintGraph() const;
+        void PrintGraph(std::ostream& os = std::cout) const;
     };
 }
 
