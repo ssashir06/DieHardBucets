@@ -11,8 +11,8 @@
 		6876DCE018A37EA500FB7BE7 /* libDieHardBuckets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6876DCDF18A37EA500FB7BE7 /* libDieHardBuckets.a */; };
 		6885991618A340C7003A64E2 /* DieHardBuckets.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6885991518A340C7003A64E2 /* DieHardBuckets.1 */; };
 		6885991D18A340E6003A64E2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6885991C18A340E6003A64E2 /* main.cpp */; };
-		689730C818A375E0003877CD /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 689730C618A374D6003877CD /* libboost_system.a */; };
-		689730C918A375F4003877CD /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 689730C418A37475003877CD /* libboost_filesystem.a */; };
+		689730C818A375E0003877CD /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 689730C618A374D6003877CD /* libboost_system.a */; settings = {ATTRIBUTES = (Weak, ); }; };
+		689730C918A375F4003877CD /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 689730C418A37475003877CD /* libboost_filesystem.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */

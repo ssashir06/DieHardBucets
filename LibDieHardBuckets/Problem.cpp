@@ -136,7 +136,6 @@ namespace Diehard
             if (node.cost != Node::cost_max && node.GetSum() == goal_sum)
             {
                 node.is_used = true;
-                node.connection.clear();
                 nodes_to->push_back(&node);
             }
             else
