@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		682A987618A350E600AD9638 /* ProblemDot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682A987418A350E600AD9638 /* ProblemDot.cpp */; };
+		682E7A3A18A35D280065D918 /* libLibDieHardBuckets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682E7A3918A35D280065D918 /* libLibDieHardBuckets.a */; };
 		6885991618A340C7003A64E2 /* DieHardBuckets.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6885991518A340C7003A64E2 /* DieHardBuckets.1 */; };
 		6885991D18A340E6003A64E2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6885991C18A340E6003A64E2 /* main.cpp */; };
-		68B45CCE18A34CFF00CEFC89 /* libLibDieHardBuckets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B45CCD18A34CFF00CEFC89 /* libLibDieHardBuckets.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,10 +29,10 @@
 /* Begin PBXFileReference section */
 		682A987418A350E600AD9638 /* ProblemDot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProblemDot.cpp; path = ../ProblemDot.cpp; sourceTree = "<group>"; };
 		682A987518A350E600AD9638 /* ProblemDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProblemDot.h; path = ../ProblemDot.h; sourceTree = "<group>"; };
+		682E7A3918A35D280065D918 /* libLibDieHardBuckets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLibDieHardBuckets.a; path = "../../../../Library/Developer/Xcode/DerivedData/DieHard-demmjmumskuolnhjtkdwsngxszcv/Build/Products/Debug/libLibDieHardBuckets.a"; sourceTree = "<group>"; };
 		6885991018A340C7003A64E2 /* DieHardBuckets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DieHardBuckets; sourceTree = BUILT_PRODUCTS_DIR; };
 		6885991518A340C7003A64E2 /* DieHardBuckets.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DieHardBuckets.1; sourceTree = "<group>"; };
 		6885991C18A340E6003A64E2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		68B45CCD18A34CFF00CEFC89 /* libLibDieHardBuckets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLibDieHardBuckets.a; path = "../../../../Library/Developer/Xcode/DerivedData/DieHard-hbqzyffhdfrwnbgttxmnlnhphtrs/Build/Products/Debug/libLibDieHardBuckets.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68B45CCE18A34CFF00CEFC89 /* libLibDieHardBuckets.a in Frameworks */,
+				682E7A3A18A35D280065D918 /* libLibDieHardBuckets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +50,7 @@
 		6885990718A340C7003A64E2 = {
 			isa = PBXGroup;
 			children = (
-				68B45CCD18A34CFF00CEFC89 /* libLibDieHardBuckets.a */,
+				682E7A3918A35D280065D918 /* libLibDieHardBuckets.a */,
 				6885991218A340C7003A64E2 /* DieHardBuckets */,
 				6885991118A340C7003A64E2 /* Products */,
 			);
@@ -205,7 +205,7 @@
 			buildSettings = {
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DieHard-hbqzyffhdfrwnbgttxmnlnhphtrs/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DieHard-demmjmumskuolnhjtkdwsngxszcv/Build/Products/Debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -216,7 +216,7 @@
 			buildSettings = {
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DieHard-hbqzyffhdfrwnbgttxmnlnhphtrs/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DieHard-demmjmumskuolnhjtkdwsngxszcv/Build/Products/Debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
