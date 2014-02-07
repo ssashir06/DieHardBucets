@@ -10,8 +10,9 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
-#include <cstdlib>
 #include <string>
+#include <cstdlib>
+#include <cstring>
 #ifdef DEBUG
 #include <boost/filesystem/operations.hpp>
 #endif

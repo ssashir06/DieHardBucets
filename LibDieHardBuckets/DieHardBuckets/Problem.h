@@ -24,7 +24,6 @@ namespace Diehard
         Volume goal_sum;
         
     public:
-        Problem(Volume (&capacities)[], Dimention size);
         Problem(const std::vector<Volume>& capacities);
         
         void BuildGraph();

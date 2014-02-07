@@ -17,7 +17,6 @@ namespace Diehard
     class ProblemDot : public Problem
     {
     public:
-        ProblemDot(Volume (&capacities)[], Dimention size);
         ProblemDot(const std::vector<Volume>& capacities);
         
     public:
