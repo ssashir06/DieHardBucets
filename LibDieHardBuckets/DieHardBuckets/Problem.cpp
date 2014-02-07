@@ -9,7 +9,6 @@
 #include <cmath>
 #include <iostream>
 #include <sstream>
-#include <memory>
 #include "Problem.h"
 #include "Volume.h"
 
@@ -18,6 +17,13 @@ using namespace std;
 namespace Diehard
 {
 #pragma mark Constractor
+    
+    Problem::Problem(Volume (&capacities)[], Dimention size)
+    :capacities(size), goal_sum(0)
+    {
+        for (Dimention i=0; i<size; i++)
+            this->capacities[i] = capacities[i];
+    }
     
     Problem::Problem(const std::vector<Volume>& capacities)
     :capacities(capacities), goal_sum(0){}
