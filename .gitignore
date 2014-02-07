@@ -11,3 +11,13 @@
 *.lai
 *.la
 *.a
+
+# Other…
+*.swp
+*.dot
+*.log
+*.cache
+.deps
+.dirstamp
+
+stamp-h1

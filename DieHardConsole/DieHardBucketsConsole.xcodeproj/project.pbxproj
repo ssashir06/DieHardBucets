@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		682A987618A350E600AD9638 /* ProblemDot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682A987418A350E600AD9638 /* ProblemDot.cpp */; };
+		6826717A18A522E300782BAB /* ProblemDot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6826717818A522E300782BAB /* ProblemDot.cpp */; };
 		6876DCE018A37EA500FB7BE7 /* libDieHardBuckets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6876DCDF18A37EA500FB7BE7 /* libDieHardBuckets.a */; };
 		6885991618A340C7003A64E2 /* DieHardBuckets.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6885991518A340C7003A64E2 /* DieHardBuckets.1 */; };
 		6885991D18A340E6003A64E2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6885991C18A340E6003A64E2 /* main.cpp */; };
@@ -29,8 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		682A987418A350E600AD9638 /* ProblemDot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProblemDot.cpp; path = ../ProblemDot.cpp; sourceTree = "<group>"; };
-		682A987518A350E600AD9638 /* ProblemDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProblemDot.h; path = ../ProblemDot.h; sourceTree = "<group>"; };
+		6826717818A522E300782BAB /* ProblemDot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProblemDot.cpp; sourceTree = "<group>"; };
+		6826717918A522E300782BAB /* ProblemDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemDot.h; sourceTree = "<group>"; };
 		6876DCDF18A37EA500FB7BE7 /* libDieHardBuckets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDieHardBuckets.a; path = "../../../../Library/Developer/Xcode/DerivedData/DieHard-demmjmumskuolnhjtkdwsngxszcv/Build/Products/Debug/libDieHardBuckets.a"; sourceTree = "<group>"; };
 		6885991018A340C7003A64E2 /* DieHardBuckets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DieHardBuckets; sourceTree = BUILT_PRODUCTS_DIR; };
 		6885991518A340C7003A64E2 /* DieHardBuckets.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DieHardBuckets.1; sourceTree = "<group>"; };
@@ -75,8 +75,8 @@
 		6885991218A340C7003A64E2 /* DieHardBuckets */ = {
 			isa = PBXGroup;
 			children = (
-				682A987418A350E600AD9638 /* ProblemDot.cpp */,
-				682A987518A350E600AD9638 /* ProblemDot.h */,
+				6826717818A522E300782BAB /* ProblemDot.cpp */,
+				6826717918A522E300782BAB /* ProblemDot.h */,
 				6885991C18A340E6003A64E2 /* main.cpp */,
 				6885991518A340C7003A64E2 /* DieHardBuckets.1 */,
 			);
@@ -135,7 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6885991D18A340E6003A64E2 /* main.cpp in Sources */,
-				682A987618A350E600AD9638 /* ProblemDot.cpp in Sources */,
+				6826717A18A522E300782BAB /* ProblemDot.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

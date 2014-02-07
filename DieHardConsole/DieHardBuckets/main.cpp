@@ -24,7 +24,7 @@ int main(int argc, const char * argv[])
 {
     if (argc < 2)
     {
-        cout << "usage: " << argv[0] << "CAPACITIES [--prefix FILENAME]" << endl << endl;
+        cout << "usage: " << argv[0] << " CAPACITIES [--prefix FILENAME]" << endl << endl;
         cout << "Specify bucket capacities by CAPACITIES argument, that is split by space character." << endl;
         cout << "CAPACITIES must be integer." << endl;
         return EXIT_FAILURE;

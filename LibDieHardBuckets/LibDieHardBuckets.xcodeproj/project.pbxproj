@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6876DCDD18A37E9600FB7BE7 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682A987718A352E700AD9638 /* Node.cpp */; };
-		6876DCDE18A37E9600FB7BE7 /* Problem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682A987818A352E700AD9638 /* Problem.cpp */; };
-		6876DCEE18A3855500FB7BE7 /* Dimention.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCEA18A3855500FB7BE7 /* Dimention.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6876DCEF18A3855500FB7BE7 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCEB18A3855500FB7BE7 /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6876DCF018A3855500FB7BE7 /* Problem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCEC18A3855500FB7BE7 /* Problem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6876DCF118A3855500FB7BE7 /* Volume.h in Headers */ = {isa = PBXBuildFile; fileRef = 6876DCED18A3855500FB7BE7 /* Volume.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68311A2118A5202300AFBE00 /* Dimention.h in Headers */ = {isa = PBXBuildFile; fileRef = 68311A1B18A5202300AFBE00 /* Dimention.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68311A2218A5202300AFBE00 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68311A1C18A5202300AFBE00 /* Node.cpp */; };
+		68311A2318A5202300AFBE00 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 68311A1D18A5202300AFBE00 /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68311A2418A5202300AFBE00 /* Problem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68311A1E18A5202300AFBE00 /* Problem.cpp */; };
+		68311A2518A5202300AFBE00 /* Problem.h in Headers */ = {isa = PBXBuildFile; fileRef = 68311A1F18A5202300AFBE00 /* Problem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68311A2618A5202300AFBE00 /* Volume.h in Headers */ = {isa = PBXBuildFile; fileRef = 68311A2018A5202300AFBE00 /* Volume.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		682A987718A352E700AD9638 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
-		682A987818A352E700AD9638 /* Problem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Problem.cpp; sourceTree = "<group>"; };
-		6876DCEA18A3855500FB7BE7 /* Dimention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dimention.h; sourceTree = "<group>"; };
-		6876DCEB18A3855500FB7BE7 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
-		6876DCEC18A3855500FB7BE7 /* Problem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem.h; sourceTree = "<group>"; };
-		6876DCED18A3855500FB7BE7 /* Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
+		68311A1B18A5202300AFBE00 /* Dimention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dimention.h; sourceTree = "<group>"; };
+		68311A1C18A5202300AFBE00 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		68311A1D18A5202300AFBE00 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		68311A1E18A5202300AFBE00 /* Problem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Problem.cpp; sourceTree = "<group>"; };
+		68311A1F18A5202300AFBE00 /* Problem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem.h; sourceTree = "<group>"; };
+		68311A2018A5202300AFBE00 /* Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
 		689730CE18A37C12003877CD /* libDieHardBuckets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDieHardBuckets.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -36,15 +36,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68311A1A18A5202300AFBE00 /* DieHardBuckets */ = {
+			isa = PBXGroup;
+			children = (
+				68311A1B18A5202300AFBE00 /* Dimention.h */,
+				68311A1C18A5202300AFBE00 /* Node.cpp */,
+				68311A1D18A5202300AFBE00 /* Node.h */,
+				68311A1E18A5202300AFBE00 /* Problem.cpp */,
+				68311A1F18A5202300AFBE00 /* Problem.h */,
+				68311A2018A5202300AFBE00 /* Volume.h */,
+			);
+			path = DieHardBuckets;
+			sourceTree = "<group>";
+		};
 		6889D91118A33EF20098DFEB = {
 			isa = PBXGroup;
 			children = (
-				6876DCEA18A3855500FB7BE7 /* Dimention.h */,
-				6876DCEB18A3855500FB7BE7 /* Node.h */,
-				6876DCEC18A3855500FB7BE7 /* Problem.h */,
-				6876DCED18A3855500FB7BE7 /* Volume.h */,
-				682A987718A352E700AD9638 /* Node.cpp */,
-				682A987818A352E700AD9638 /* Problem.cpp */,
+				68311A1A18A5202300AFBE00 /* DieHardBuckets */,
 				6889D91B18A33EF20098DFEB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,10 +72,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6876DCF018A3855500FB7BE7 /* Problem.h in Headers */,
-				6876DCEF18A3855500FB7BE7 /* Node.h in Headers */,
-				6876DCF118A3855500FB7BE7 /* Volume.h in Headers */,
-				6876DCEE18A3855500FB7BE7 /* Dimention.h in Headers */,
+				68311A2518A5202300AFBE00 /* Problem.h in Headers */,
+				68311A2318A5202300AFBE00 /* Node.h in Headers */,
+				68311A2618A5202300AFBE00 /* Volume.h in Headers */,
+				68311A2118A5202300AFBE00 /* Dimention.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,8 +130,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6876DCDD18A37E9600FB7BE7 /* Node.cpp in Sources */,
-				6876DCDE18A37E9600FB7BE7 /* Problem.cpp in Sources */,
+				68311A2218A5202300AFBE00 /* Node.cpp in Sources */,
+				68311A2418A5202300AFBE00 /* Problem.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
