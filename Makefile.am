@@ -1,6 +1,6 @@
 SUBDIRS = DieHardConsole LibDieHardBuckets
 AUTOMAKE_OPTIONS = subdir-objects
-AM_CPPFLAGS = -ILibDieHardBuckets -std=c++11
+AM_CPPFLAGS = -I$(top_srcdir)/LibDieHardBuckets -std=c++11
 bin_PROGRAMS = DieHardBuckets
 DieHardBuckets_LDADD = \
 	LibDieHardBuckets/libDieHardBackets.a

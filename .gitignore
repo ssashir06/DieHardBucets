@@ -19,5 +19,9 @@
 *.cache
 .deps
 .dirstamp
-
 stamp-h1
+config.h
+config.log
+config.status
+Makefile
+DieHardBuckets
