@@ -22,6 +22,6 @@ AC_TYPE_SIZE_T
 
 # Checks for library functions.
 
-AC_CONFIG_FILES([Makefile LibDieHardBuckets/Makefile DieHardConsole/Makefile])
+AC_CONFIG_FILES([Makefile LibDieHardBuckets/Makefile DieHardConsole/Makefile DieHardBucketsTweet/Makefile])
 AC_PROG_RANLIB
 AC_OUTPUT

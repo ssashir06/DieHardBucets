@@ -76,7 +76,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-bin_PROGRAMS = DieHardBuckets$(EXEEXT)
+bin_PROGRAMS = DieHardBuckets$(EXEEXT) DieHardTweet$(EXEEXT)
 subdir = .
 DIST_COMMON = INSTALL NEWS README AUTHORS ChangeLog \
 	$(srcdir)/Makefile.in $(srcdir)/Makefile.am \
@@ -101,6 +101,10 @@ am_DieHardBuckets_OBJECTS =  \
 	DieHardConsole/DieHardBuckets/main.$(OBJEXT)
 DieHardBuckets_OBJECTS = $(am_DieHardBuckets_OBJECTS)
 DieHardBuckets_DEPENDENCIES = LibDieHardBuckets/libDieHardBackets.a
+am_DieHardTweet_OBJECTS = DieHardBucketsTweet/DieHardBucketsTweet/ProblemTweet.$(OBJEXT) \
+	DieHardBucketsTweet/DieHardBucketsTweet/main.$(OBJEXT)
+DieHardTweet_OBJECTS = $(am_DieHardTweet_OBJECTS)
+DieHardTweet_DEPENDENCIES = LibDieHardBuckets/libDieHardBackets.a
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -130,8 +134,8 @@ AM_V_CXXLD = $(am__v_CXXLD_@AM_V@)
 am__v_CXXLD_ = $(am__v_CXXLD_@AM_DEFAULT_V@)
 am__v_CXXLD_0 = @echo "  CXXLD   " $@;
 am__v_CXXLD_1 = 
-SOURCES = $(DieHardBuckets_SOURCES)
-DIST_SOURCES = $(DieHardBuckets_SOURCES)
+SOURCES = $(DieHardBuckets_SOURCES) $(DieHardTweet_SOURCES)
+DIST_SOURCES = $(DieHardBuckets_SOURCES) $(DieHardTweet_SOURCES)
 RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \
 	ctags-recursive dvi-recursive html-recursive info-recursive \
 	install-data-recursive install-dvi-recursive \
@@ -319,6 +323,13 @@ DieHardBuckets_SOURCES = \
 	DieHardConsole/DieHardBuckets/ProblemDot.cpp \
 	DieHardConsole/DieHardBuckets/main.cpp
 
+DieHardTweet_LDADD = \
+	LibDieHardBuckets/libDieHardBackets.a
+
+DieHardTweet_SOURCES = \
+	DieHardBucketsTweet/DieHardBucketsTweet/ProblemTweet.cpp \
+	DieHardBucketsTweet/DieHardBucketsTweet/main.cpp
+
 all: config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-recursive
 
@@ -431,14 +442,33 @@ DieHardConsole/DieHardBuckets/main.$(OBJEXT):  \
 DieHardBuckets$(EXEEXT): $(DieHardBuckets_OBJECTS) $(DieHardBuckets_DEPENDENCIES) $(EXTRA_DieHardBuckets_DEPENDENCIES) 
 	@rm -f DieHardBuckets$(EXEEXT)
 	$(AM_V_CXXLD)$(CXXLINK) $(DieHardBuckets_OBJECTS) $(DieHardBuckets_LDADD) $(LIBS)
+DieHardBucketsTweet/DieHardBucketsTweet/$(am__dirstamp):
+	@$(MKDIR_P) DieHardBucketsTweet/DieHardBucketsTweet
+	@: > DieHardBucketsTweet/DieHardBucketsTweet/$(am__dirstamp)
+DieHardBucketsTweet/DieHardBucketsTweet/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) DieHardBucketsTweet/DieHardBucketsTweet/$(DEPDIR)
+	@: > DieHardBucketsTweet/DieHardBucketsTweet/$(DEPDIR)/$(am__dirstamp)
+DieHardBucketsTweet/DieHardBucketsTweet/ProblemTweet.$(OBJEXT):  \
+	DieHardBucketsTweet/DieHardBucketsTweet/$(am__dirstamp) \
+	DieHardBucketsTweet/DieHardBucketsTweet/$(DEPDIR)/$(am__dirstamp)
+DieHardBucketsTweet/DieHardBucketsTweet/main.$(OBJEXT):  \
+	DieHardBucketsTweet/DieHardBucketsTweet/$(am__dirstamp) \
+	DieHardBucketsTweet/DieHardBucketsTweet/$(DEPDIR)/$(am__dirstamp)
+
+DieHardTweet$(EXEEXT): $(DieHardTweet_OBJECTS) $(DieHardTweet_DEPENDENCIES) $(EXTRA_DieHardTweet_DEPENDENCIES) 
+	@rm -f DieHardTweet$(EXEEXT)
+	$(AM_V_CXXLD)$(CXXLINK) $(DieHardTweet_OBJECTS) $(DieHardTweet_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
+	-rm -f DieHardBucketsTweet/DieHardBucketsTweet/*.$(OBJEXT)
 	-rm -f DieHardConsole/DieHardBuckets/*.$(OBJEXT)
 
 distclean-compile:
 	-rm -f *.tab.c
 
+@AMDEP_TRUE@@am__include@ @am__quote@DieHardBucketsTweet/DieHardBucketsTweet/$(DEPDIR)/ProblemTweet.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@DieHardBucketsTweet/DieHardBucketsTweet/$(DEPDIR)/main.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@DieHardConsole/DieHardBuckets/$(DEPDIR)/ProblemDot.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@DieHardConsole/DieHardBuckets/$(DEPDIR)/main.Po@am__quote@
 
@@ -786,6 +816,8 @@ clean-generic:
 distclean-generic:
 	-test -z "$(CONFIG_CLEAN_FILES)" || rm -f $(CONFIG_CLEAN_FILES)
 	-test . = "$(srcdir)" || test -z "$(CONFIG_CLEAN_VPATH_FILES)" || rm -f $(CONFIG_CLEAN_VPATH_FILES)
+	-rm -f DieHardBucketsTweet/DieHardBucketsTweet/$(DEPDIR)/$(am__dirstamp)
+	-rm -f DieHardBucketsTweet/DieHardBucketsTweet/$(am__dirstamp)
 	-rm -f DieHardConsole/DieHardBuckets/$(DEPDIR)/$(am__dirstamp)
 	-rm -f DieHardConsole/DieHardBuckets/$(am__dirstamp)
 
@@ -798,7 +830,7 @@ clean-am: clean-binPROGRAMS clean-generic mostlyclean-am
 
 distclean: distclean-recursive
 	-rm -f $(am__CONFIG_DISTCLEAN_FILES)
-	-rm -rf DieHardConsole/DieHardBuckets/$(DEPDIR)
+	-rm -rf DieHardBucketsTweet/DieHardBucketsTweet/$(DEPDIR) DieHardConsole/DieHardBuckets/$(DEPDIR)
 	-rm -f Makefile
 distclean-am: clean-am distclean-compile distclean-generic \
 	distclean-hdr distclean-tags
@@ -846,7 +878,7 @@ installcheck-am:
 maintainer-clean: maintainer-clean-recursive
 	-rm -f $(am__CONFIG_DISTCLEAN_FILES)
 	-rm -rf $(top_srcdir)/autom4te.cache
-	-rm -rf DieHardConsole/DieHardBuckets/$(DEPDIR)
+	-rm -rf DieHardBucketsTweet/DieHardBucketsTweet/$(DEPDIR) DieHardConsole/DieHardBuckets/$(DEPDIR)
 	-rm -f Makefile
 maintainer-clean-am: distclean-am maintainer-clean-generic
 
