@@ -10,8 +10,11 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
-#include <cstdlib>
 #include <string>
+#include <algorithm>
+#include <cstdlib>
+#include <cstring>
+#include <cstdlib>
 #ifdef DEBUG
 #include <boost/filesystem/operations.hpp>
 #endif
@@ -32,28 +35,26 @@ int main(int argc, const char * argv[])
     
     string prefix = "DieHard";
     vector<Volume> backets = vector<Volume>(argc - 1);;
-    try
+    size_t backet_size = 0;
+    for (int i = 1; i < argc; i++)
     {
-        size_t backet_size = 0;
-        for (int i = 1; i < argc; i++)
+        if (strcmp(argv[i], "--prefix") == 0)
         {
-            if (strcmp(argv[i], "--prefix") == 0)
-            {
-                prefix = argv[i + 1];
-                i++;
-            }
-            else
-            {
-                backets[backet_size++] = stoi(argv[i]);
-            }
+            prefix = argv[i + 1];
+            i++;
         }
-        backets.resize(backet_size);
+        else
+        {
+            auto capacity = atoi(argv[i]);
+            if (capacity <= 0)
+            {
+                cerr << "Wrong argument, backet capacity cannot be zero or minus." << endl;
+                return EXIT_FAILURE;
+            }
+            backets[backet_size++] = capacity;
+        }
     }
-    catch (const invalid_argument& ex)
-    {
-        cerr << "Argument is wrong" << ex.what() <<  endl;
-        return EXIT_FAILURE;
-    }
+    backets.resize(backet_size);
     
     auto prob = ProblemDot(backets);
     prob.BuildGraph();

@@ -14,9 +14,6 @@ using namespace std;
 
 namespace Diehard
 {
-    ProblemDot::ProblemDot(Volume (&capacities)[], Dimention size)
-    :Problem(capacities, size) {}
-    
     ProblemDot::ProblemDot(const std::vector<Volume>& capacities)
     :Problem(capacities) {}
     
