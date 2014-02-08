@@ -38,12 +38,9 @@ namespace Diehard
         auto tweets = shared_ptr<list<string> >(new list<string>());
         {
             stringstream ss;
-            ss << "Goal: " << goal_sum;
-            tweets->push_back(ss.str());
-        }
-        {
-            stringstream ss;
             ss << "Capacities: " << GetName();
+            ss << " -> ";
+            ss << "Request: " << goal_sum;
             tweets->push_back(ss.str());
         }
         for_each(nodes_route.begin(), nodes_route.end(), [&](const Node* node)
