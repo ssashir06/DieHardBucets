@@ -9,6 +9,7 @@
 #include <vector>
 #include <random>
 #include <sstream>
+#include <algorithm>
 #include "ProblemTweet.h"
 
 using namespace std;

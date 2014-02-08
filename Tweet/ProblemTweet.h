@@ -9,6 +9,7 @@
 #ifndef __DieHardBucketsTweet__ProblemTweet__
 #define __DieHardBucketsTweet__ProblemTweet__
 
+#include <memory>
 #include <random>
 #include <list>
 #include <string>
