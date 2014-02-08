@@ -24,3 +24,7 @@ config.h
 config.log
 config.status
 Makefile
+
+# xcode
+xcuserdata
+*.xcuserstate
