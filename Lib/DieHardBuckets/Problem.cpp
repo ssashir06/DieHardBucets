@@ -42,13 +42,13 @@ namespace Diehard
     {
         nodes.clear();
         list<Node> edges;
-        auto dimention = capacities.size();
-        auto origin = Node(dimention);
+        auto capacities_ptr = shared_ptr<vector<Volume> >(new vector<Volume>(capacities));
+        auto origin = Node(capacities_ptr);
         
         edges.push_back(origin);
         nodes.push_back(origin);
         
-        for (Dimention d = 0; d < dimention; d++)
+        for (Dimention d = 0; d < capacities.size(); d++)
         {
             list<Node> nodes_new;
             for (auto& node : nodes)

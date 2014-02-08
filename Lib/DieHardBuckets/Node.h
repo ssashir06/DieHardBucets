@@ -12,6 +12,7 @@
 #include <vector>
 #include <list>
 #include <string>
+#include <memory>
 #include <climits>
 #include "Dimention.h"
 #include "Volume.h"
@@ -25,20 +26,21 @@ namespace Diehard
         static const Cost cost_max = INT_MAX;
         
     public:
+        std::shared_ptr<std::vector<Volume> > capacities;
         std::vector<Volume> volumes;
         std::list<Node*> from, to;
         Cost cost;
         bool is_used;
         
     public:
-        Node(const std::vector<Volume>& volumes);
-        Node(Dimention dim, int volume_all = 0);
+        Node(const std::shared_ptr<std::vector<Volume> >& capacities, const std::vector<Volume>& volumes);
+        Node(const std::shared_ptr<std::vector<Volume> >& capacities, int volume_all = 0);
         Node(const Node& node_src);
         Node(const Node& node_src, Dimention dim, Volume v);
         
         std::list<std::vector<Volume> > GetActions(const std::vector<Volume>& capacities) const;
         
-        std::string GetName() const;
+        std::string GetName(bool with_capacity = false) const;
         
         Volume GetSum() const;
     };

@@ -14,20 +14,20 @@ using namespace std;
 
 namespace Diehard
 {
-    Node::Node(const vector<Volume>& volumes)
-    : volumes(volumes), cost(cost_max), is_used(true)
+    Node::Node(const shared_ptr<vector<Volume> >& capacities, const vector<Volume>& volumes)
+    : capacities(capacities), volumes(volumes), cost(cost_max), is_used(true)
     {}
     
-    Node::Node(Dimention dim, int volume_all)
-    : volumes(vector<Volume>(dim, volume_all)), cost(cost_max), is_used(true)
+    Node::Node(const shared_ptr<vector<Volume> >& capacities, int volume_all)
+    : capacities(capacities), volumes(vector<Volume>(capacities->size(), volume_all)), cost(cost_max), is_used(true)
     {}
     
     Node::Node(const Node& node_src)
-    : volumes(node_src.volumes), from(node_src.from), to(node_src.to), cost(cost_max), is_used(true)
+    : capacities(node_src.capacities), volumes(node_src.volumes), from(node_src.from), to(node_src.to), cost(cost_max), is_used(true)
     {}
     
     Node::Node(const Node& node_src, Dimention dim, Volume v)
-    : volumes(node_src.volumes), from(node_src.from), to(node_src.to), cost(cost_max), is_used(true)
+    : capacities(node_src.capacities), volumes(node_src.volumes), from(node_src.from), to(node_src.to), cost(cost_max), is_used(true)
     {
         volumes[dim] = v;
     }
@@ -75,7 +75,7 @@ namespace Diehard
         return result;
     }
     
-    string Node::GetName() const
+    string Node::GetName(bool with_capacity) const
     {
         stringstream ss;
         ss << "(";
@@ -83,6 +83,8 @@ namespace Diehard
         {
             if (i != 0) ss << ",";
             ss << volumes[i];
+            if (with_capacity)
+                ss << "/" << (*capacities)[i];
         }
         ss << ")";
         return ss.str();
