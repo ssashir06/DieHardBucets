@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68585AC51BAF397C00BC248D /* ProblemDot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68585AC31BAF397C00BC248D /* ProblemDot.cpp */; settings = {ASSET_TAGS = (); }; };
+		68585AC61BAF397C00BC248D /* ProblemDot.h in Headers */ = {isa = PBXBuildFile; fileRef = 68585AC41BAF397C00BC248D /* ProblemDot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6888CFEE18A5F5FB0022E920 /* Dimention.h in Headers */ = {isa = PBXBuildFile; fileRef = 6888CFE818A5F5FB0022E920 /* Dimention.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6888CFEF18A5F5FB0022E920 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6888CFE918A5F5FB0022E920 /* Node.cpp */; };
 		6888CFF018A5F5FB0022E920 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 6888CFEA18A5F5FB0022E920 /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68585AC31BAF397C00BC248D /* ProblemDot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProblemDot.cpp; path = DieHardBuckets/ProblemDot.cpp; sourceTree = "<group>"; };
+		68585AC41BAF397C00BC248D /* ProblemDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProblemDot.h; path = DieHardBuckets/ProblemDot.h; sourceTree = "<group>"; };
 		6888CFE818A5F5FB0022E920 /* Dimention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dimention.h; path = DieHardBuckets/Dimention.h; sourceTree = "<group>"; };
 		6888CFE918A5F5FB0022E920 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Node.cpp; path = DieHardBuckets/Node.cpp; sourceTree = "<group>"; };
 		6888CFEA18A5F5FB0022E920 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Node.h; path = DieHardBuckets/Node.h; sourceTree = "<group>"; };
@@ -39,6 +43,8 @@
 		6889D91118A33EF20098DFEB = {
 			isa = PBXGroup;
 			children = (
+				68585AC31BAF397C00BC248D /* ProblemDot.cpp */,
+				68585AC41BAF397C00BC248D /* ProblemDot.h */,
 				6888CFE818A5F5FB0022E920 /* Dimention.h */,
 				6888CFE918A5F5FB0022E920 /* Node.cpp */,
 				6888CFEA18A5F5FB0022E920 /* Node.h */,
@@ -64,6 +70,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68585AC61BAF397C00BC248D /* ProblemDot.h in Headers */,
 				6888CFF218A5F5FB0022E920 /* Problem.h in Headers */,
 				6888CFF018A5F5FB0022E920 /* Node.h in Headers */,
 				6888CFF318A5F5FB0022E920 /* Volume.h in Headers */,
@@ -124,6 +131,7 @@
 			files = (
 				6888CFEF18A5F5FB0022E920 /* Node.cpp in Sources */,
 				6888CFF118A5F5FB0022E920 /* Problem.cpp in Sources */,
+				68585AC51BAF397C00BC248D /* ProblemDot.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

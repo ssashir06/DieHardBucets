@@ -7,7 +7,6 @@ bin_PROGRAMS = DieHardBuckets DieHardTweet
 DieHardBuckets_LDADD = \
 	Lib/libDieHardBackets.a
 DieHardBuckets_SOURCES = \
-	Console/ProblemDot.cpp \
 	Console/DieHardBuckets/main.cpp
 
 DieHardTweet_LDADD = \

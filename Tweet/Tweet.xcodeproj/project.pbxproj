@@ -101,7 +101,7 @@
 		6830D4B818A3A5FA00A123A0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Hiroshi Takeda";
 			};
 			buildConfigurationList = 6830D4BB18A3A5FA00A123A0 /* Build configuration list for PBXProject "Tweet" */;
@@ -176,6 +176,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -248,6 +249,7 @@
 				6812870418A5F09B0059D2A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6830D4BB18A3A5FA00A123A0 /* Build configuration list for PBXProject "Tweet" */ = {
 			isa = XCConfigurationList;
