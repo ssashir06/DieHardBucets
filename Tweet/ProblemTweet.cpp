@@ -46,7 +46,7 @@ namespace Diehard
         for_each(nodes_route.begin(), nodes_route.end(), [&](const Node* node)
                  {
                      stringstream ss;
-                     ss << "Bucket: " << node->GetName(true);
+                     ss << "Bucket: " << node->GetName(false);
                      tweets->push_back(ss.str());
                  });
         {
