@@ -19,7 +19,7 @@ namespace Diehard
     default_random_engine ProblemTweet::random_engine = default_random_engine(random_device()());
     
     ProblemTweet::ProblemTweet()
-    : Problem(*GetRandomCapacities()) {}
+    : ProblemDot(*GetRandomCapacities()) {}
     
     shared_ptr<list<string> > ProblemTweet::GetTweets() const
     {

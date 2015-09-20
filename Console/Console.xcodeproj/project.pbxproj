@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6812870A18A5F1910059D2A9 /* ProblemDot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6812870818A5F1910059D2A9 /* ProblemDot.cpp */; };
 		6876DCE018A37EA500FB7BE7 /* libDieHardBuckets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6876DCDF18A37EA500FB7BE7 /* libDieHardBuckets.a */; };
 		6885991618A340C7003A64E2 /* DieHardBuckets.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6885991518A340C7003A64E2 /* DieHardBuckets.1 */; };
 		6885991D18A340E6003A64E2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6885991C18A340E6003A64E2 /* main.cpp */; };
@@ -29,8 +28,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6812870818A5F1910059D2A9 /* ProblemDot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProblemDot.cpp; sourceTree = "<group>"; };
-		6812870918A5F1910059D2A9 /* ProblemDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemDot.h; sourceTree = "<group>"; };
 		6876DCDF18A37EA500FB7BE7 /* libDieHardBuckets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDieHardBuckets.a; path = "../../../../Library/Developer/Xcode/DerivedData/DieHard-demmjmumskuolnhjtkdwsngxszcv/Build/Products/Debug/libDieHardBuckets.a"; sourceTree = "<group>"; };
 		6885991018A340C7003A64E2 /* DieHardBuckets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DieHardBuckets; sourceTree = BUILT_PRODUCTS_DIR; };
 		6885991518A340C7003A64E2 /* DieHardBuckets.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DieHardBuckets.1; sourceTree = "<group>"; };
@@ -56,8 +53,6 @@
 		6885990718A340C7003A64E2 = {
 			isa = PBXGroup;
 			children = (
-				6812870818A5F1910059D2A9 /* ProblemDot.cpp */,
-				6812870918A5F1910059D2A9 /* ProblemDot.h */,
 				6876DCDF18A37EA500FB7BE7 /* libDieHardBuckets.a */,
 				689730C618A374D6003877CD /* libboost_system.a */,
 				689730C418A37475003877CD /* libboost_filesystem.a */,
@@ -135,7 +130,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6885991D18A340E6003A64E2 /* main.cpp in Sources */,
-				6812870A18A5F1910059D2A9 /* ProblemDot.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

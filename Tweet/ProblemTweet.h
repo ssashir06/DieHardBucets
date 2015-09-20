@@ -14,10 +14,11 @@
 #include <list>
 #include <string>
 #include <DieHardBuckets/Problem.h>
+#include <DieHardBuckets/ProblemDot.h>
 
 namespace Diehard
 {
-    class ProblemTweet : public Problem
+    class ProblemTweet : public ProblemDot
     {
     private:
         static std::default_random_engine random_engine;

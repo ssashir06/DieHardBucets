@@ -9,6 +9,7 @@
 #ifndef __DieHardBucketsConsole__ProblemDot__
 #define __DieHardBucketsConsole__ProblemDot__
 
+#include <iostream>
 #include <ostream>
 #include <DieHardBuckets/Problem.h>
 
