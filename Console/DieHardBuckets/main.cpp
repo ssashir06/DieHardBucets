@@ -18,7 +18,7 @@
 #ifdef DEBUG
 #include <boost/filesystem/operations.hpp>
 #endif
-#include "../ProblemDot.h"
+#include <DieHardBuckets/ProblemDot.h>
 
 using namespace std;
 using namespace Diehard;
